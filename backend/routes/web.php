@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('', 'backend\App\Http\Controllers\BeginnerController@index');
+Route::get('Beginner', 'App\Http\Controllers\BeginnerController@index');
