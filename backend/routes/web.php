@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/',['as'=>'index','uses'=>'beginnerController@index']);
+Route::get('/',['as'=>'index','uses'=>'IndexController@index']);
