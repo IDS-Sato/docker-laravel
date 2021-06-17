@@ -19,6 +19,4 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/',function(){
-    return "Hello World";
-});
+Route::get('/',['as'=>'index','uses'=>'beginnerController@index']);
