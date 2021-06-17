@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 */
 
-Route::get('Beginner', 'BeginnerController@index');
+Route::get('Beginner', 'App\Http\Controllers\BeginnerController@index');
