@@ -19,9 +19,12 @@ class IndexController extends Controller
     }
     */
   public function index() {
+    /*
     $constled = new constled;
-    $constled = constled::first();
+    */
     
+    $constled = constled::first();
+
     /*
     $result = [
         'result'      => true,
