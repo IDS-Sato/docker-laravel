@@ -12,8 +12,6 @@ class constledController extends Controller
 {
     public function index()
     {
-        return 'ok';
-        /*
        try {
             $constled = constled::first();
             $result = [
@@ -32,7 +30,6 @@ class constledController extends Controller
             return $this->resConversionJson($result, $e->getCode());
         }
         return $this->resConversionJson($result);
-        */
     }
 
     private function resConversionJson($result, $statusCode=200)
