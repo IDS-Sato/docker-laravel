@@ -21,7 +21,7 @@ class IndexController extends Controller
   public function index() {
     $constled = new constled;
     $value = $constled->find(1);
-    $arr = ['const_no', 'const_date', 'const_name'];
+    $arr = [$constled->const_no, 'const_date', 'const_name'];
     return view('index', compact('value', 'arr'));
   }
 
