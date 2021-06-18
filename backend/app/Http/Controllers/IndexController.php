@@ -30,7 +30,7 @@ class IndexController extends Controller
     
     $value = $constled->find(1);
     $arr = [$constled->const_no, $constled->const_date, $constled->const_name];
-    return view('index', compact('value', 'result'));
+    return view('index', compact('value', 'arr'));
   }
 
 }
