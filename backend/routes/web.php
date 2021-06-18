@@ -19,8 +19,4 @@ Route::get('/', function () {
 });
 */
 
-/*
 Route::get('/',['as'=>'index','uses'=>'IndexController@index']);
-*/
-
-Route::get('constled','API\constledController@index');
