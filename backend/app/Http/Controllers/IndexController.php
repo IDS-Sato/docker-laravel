@@ -27,8 +27,9 @@ class IndexController extends Controller
         'const_date' => $constled->const_date,
         'const_name' => $constled->const_name
     ];
+    
     $value = $constled->find(1);
-    $arr = ['const_no', 'const_date', 'const_name'];
+    $arr = [$constled->const_no, $constled->const_date, $constled->const_name];
     return view('index', compact('value', 'result'));
   }
 
