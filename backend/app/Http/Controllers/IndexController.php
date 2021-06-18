@@ -18,7 +18,7 @@ class IndexController extends Controller
         return view('index');
     }
     */
-  public function func() {
+  public function index() {
     $constled = new constled;
     $value = $constled->find(1);
     $arr = ['const_no', 'const_date', 'const_name'];
