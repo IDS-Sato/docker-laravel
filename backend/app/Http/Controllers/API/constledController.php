@@ -5,11 +5,15 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\constled;
+use GuzzleHttp\Psr7\Message;
+use Symfony\Component\Mime\Message as MimeMessage;
 
 class constledController extends Controller
 {
     public function index()
     {
+        return 'ok';
+        /*
        try {
             $constled = constled::first();
             $result = [
@@ -28,6 +32,7 @@ class constledController extends Controller
             return $this->resConversionJson($result, $e->getCode());
         }
         return $this->resConversionJson($result);
+        */
     }
 
     private function resConversionJson($result, $statusCode=200)
